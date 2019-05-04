@@ -47,5 +47,12 @@ class Song
   def self.alphabetical 
     self.all.sort do |song|
   end 
+  
+  def self.new_from_filename 
+    
+  end 
 
+  def self.create_from_filename 
+    
+  end 
 end
