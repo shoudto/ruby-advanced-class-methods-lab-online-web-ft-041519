@@ -50,9 +50,8 @@ class Song
   end 
   
   def self.new_from_filename(filename)
- 
-    filename = filename.split(" - ")
     binding.pry 
+    filename = filename.split(" - ")
     song_name = filename[1].gsub(".mp3", "")
     
   end 
