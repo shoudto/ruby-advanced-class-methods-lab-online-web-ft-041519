@@ -13,8 +13,9 @@ class Song
   end
   
   def self.create
-    binding.pry 
-    song = self.new 
+   # binding.pry 
+    song = self.new
+    song.save 
   end 
 
 end
