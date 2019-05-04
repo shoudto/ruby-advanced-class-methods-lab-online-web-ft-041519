@@ -52,7 +52,7 @@ class Song
   def self.new_from_filename(filename)
     binding.pry
     filename = filename.split(" - ")
-    song_name = filename[1].delete(".mp3")
+    song_name = filename.gsub(".mp3")
     
   end 
   
