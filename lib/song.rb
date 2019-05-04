@@ -31,6 +31,10 @@ class Song
     song = self.create
     song.name = name
     song 
+  end
+  
+  def find_by_name 
+    
   end 
 
 end
