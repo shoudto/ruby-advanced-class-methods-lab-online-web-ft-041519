@@ -12,48 +12,7 @@ class Song
     self.class.all << self
   end
   
-  def self.create
-   # binding.pry 
-    song = self.new
-    song.save
-    song 
-  end
-  
-  def self.new_by_name(name)
-   # binding.pry
-    song = self.new 
-    song.name = name 
-    song 
-  end 
-  
-  def self.create_by_name(name)
-    # binding.pry
-    song = self.create
-    song.name = name
-    song 
-  end
-  
-  def self.find_by_name(name) 
-   #  binding.pry
-    @all.find do |song| 
-      song.name == name 
-    end 
-  end 
-  
-  def self.find_or_create_by_name(name)
-   # binding.pry 
-    if !self.find_by_name(name)
-      self.create_by_name(name)
-    else 
-      self.find_by_name(name)
-    end 
-  end
-  
-  def self.alphabetical
-    #binding.pry
-    self.all.sort_by{|song| song.name == name}
-  end 
-  
+ 
   # end of code 
   def self.destroy_all
     self.all.clear 
