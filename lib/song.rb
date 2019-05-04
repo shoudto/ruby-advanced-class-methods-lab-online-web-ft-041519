@@ -53,6 +53,7 @@ class Song
     binding.pry 
     filename = filename.split(" - ")
     song_name = filename[1].gsub(".mp3", "")
+    artist_name = [0]
     
   end 
   
